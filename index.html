@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        color: gray;
+      }
+      .destination {
+        background-color: blanchedalmond;
+        border-style: outset;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .destination figure {
+        display: inline-block;
+        margin: 10px;
+      }
+
+      .package {
+        background-color: skyblue;
+        border-style: outset;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .package p {
+        display: inline-block;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>NUSANTARAVEL</h1>
+      <p>Jelajahi Pesona Indonesia</p>
+      <br />
+    </header>
+    <main>
+      <section class="destination">
+        <h2>Destinasi Liburan</h2>
+        <figure>
+          <img
+            src="bali.jpg"
+            alt="Bali"
+            title="Bali"
+            width="100px"
+            leng="100px"
+          />
+          <figcaption>Bali</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="Bromo.jpg"
+            alt="Gunung Bromo"
+            title="Gunung Bromo"
+            width="100px"
+            leng="100px"
+          />
+          <figcaption>Gunung Bromo</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="komodo island.jpg"
+            alt="Pulau Komodo"
+            title="Pulau Komodo"
+            width="100px"
+            leng="100px"
+          />
+          <figcaption>Pulau Komodo</figcaption>
+        </figure>
+        <br />
+        <br />
+      </section>
+      <section class="package">
+        <h2>Paket Perjalanan</h2>
+        <p>2 Hari</p>
+        <p>3 Hari</p>
+        <p>4 Hari</p>
+        <br />
+      </section>
+      <section>
+        <fieldset>
+          <legend>Kontak kami</legend>
+          <form action="https://httpbin.org/get" method="get">
+            <p>
+              <label for="nama">Nama</label>
+              <input type="text" id="nama" placeholder="nama anda" />
+            </p>
+            <p>
+              <label for="surel">Email</label>
+              <input type="text" id="surel" placeholder="email anda" />
+            </p>
+            <p>
+              <label for="pesan">Pesan anda</label>
+              <br />
+              <textarea
+                name="tanggapan"
+                id="pesan"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </p>
+            <p>
+              <label for="destinasi">Pilih Destinasi Wisata Anda</label><br />
+              <select name="destinasi" id="destinasi">
+                <option value="Bali">Bali</option>
+                <option value="Pulau Komodo">Pulau Komodo</option>
+                <option value="Gunung Bromo">Gunung Bromo</option>
+              </select>
+            </p>
+            <button type="submit">Kirim</button>
+          </form>
+        </fieldset>
+      </section>
+    </main>
+  </body>
+</html>
