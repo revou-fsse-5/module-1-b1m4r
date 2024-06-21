@@ -8,16 +8,39 @@
       header {
         color: gray;
       }
+
+      body {
+        background-color: azure;
+      }
+
+      nav {
+        position: sticky;
+        top: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        font-size: 20px;
+        background-color: khaki;
+        padding: 10px;
+        border-style: outset;
+        border-radius: 10px;
+      }
+
       .destination {
         background-color: blanchedalmond;
         border-style: outset;
         border-radius: 10px;
         text-align: center;
-      }
 
-      .destination figure {
-        display: inline-block;
-        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        justify-content: center;
+        align-items: center;
       }
 
       .package {
@@ -25,11 +48,21 @@
         border-style: outset;
         border-radius: 10px;
         text-align: center;
+
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        justify-content: center;
+        align-items: center;
       }
 
-      .package p {
-        display: inline-block;
-        margin: 10px;
+      @media (max-width: 600px) {
+        .destination,
+        .package {
+          flex-direction: column;
+          align-items: stretch;
+        }
       }
     </style>
   </head>
@@ -39,9 +72,19 @@
       <p>Jelajahi Pesona Indonesia</p>
       <br />
     </header>
+
+    <nav>
+      <a href="#destination">Destinasi Liburan</a>
+      <a href="#package">Paket Perjalanan</a>
+      <a href="#contact">Kontak kami</a>
+    </nav>
+    <br />
+    <br />
+    <br />
+
     <main>
+      <h2 id="destination">Destinasi Liburan</h2>
       <section class="destination">
-        <h2>Destinasi Liburan</h2>
         <figure>
           <img
             src="bali.jpg"
@@ -72,17 +115,33 @@
           />
           <figcaption>Pulau Komodo</figcaption>
         </figure>
-        <br />
-        <br />
       </section>
+      <br />
+      <br />
+      <br />
+
+      <h2 id="package">Paket Perjalanan</h2>
       <section class="package">
-        <h2>Paket Perjalanan</h2>
         <p>2 Hari</p>
         <p>3 Hari</p>
         <p>4 Hari</p>
         <br />
       </section>
-      <section>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <section class="contact" id="contact">
         <fieldset>
           <legend>Kontak kami</legend>
           <form action="https://httpbin.org/get" method="get">
